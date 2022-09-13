@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofereça o certificado!</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="styles.css">
+<script src='script.js' defer></script>
+</head>
+
+<body>
+
+ <div class='itemsContainer'>
+  <div>
+
+   <h2>Ofereça o certificado!</h2>
+   <h4>Insira os dados abaixo:</h4>
+
+   <div>
+
+    <label for='saleMan'>Vendedor: </label>
+    <select class='select' id='salesMan' onchange="getSalesMan(this)">
+    <option value='Mateus'>Mateus</option>
+    <option value='Juliano'>Juliano</option>
+    <option value='Suzana'>Suzana</option>
+    <option value='Priscila'>Priscila</option>
+    </select>
+
+    <label for='certificateType'>Modelo</label>
+    <select class='select' id='certificateType' onchange="getCertificateValue(this)">
+    <option value='R$195,00'>A1</option>
+    <option value='R$300,00 o certificado A3 em cartão, pra 36 meses, como é o seu hoje'>A3</option>
+    </select>
+
+   </div>
+
+   <div style='position: relative;'>
+
+    <label>Empresa: </label>
+    <input class='inputCostumer' onkeyup="getCostumer(this)" ></input>
+
+    <label>Vencimento: </label>
+    <input class='inputDate' onkeyup="getValidate(event, this)"  placeholder='dd/mm'></input>
+    <p class='alert-invalid-validate'>*Data inválida!</p>
+
+   </div>
+
+   <div style='position: relative;'>
+
+    <label>Telefone: </label>
+    <input 
+     class='input' 
+     onkeyup="getNumber(this)" 
+     value='(44)'
+    ></input>
+    <p class='alert-invalid-phone-number'>*Telefone inválido!</p>
+
+   </div>
+
+   <a 
+    class='btn btn-dark' 
+    id= 'sendMessage' 
+    href='https://wa.me/whatsappphonenumber/' 
+    target='_blank'
+    onclick="setTimeout(() => {window.location.reload()}, 1000);"
+   >
+    <i class="bi bi-whatsapp me-2"></i>
+    Iniciar Conversa
+   </a>
+
+  </div>
+</div>
+
+</body>
+
+</html>

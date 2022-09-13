@@ -1,0 +1,73 @@
+	body{
+	 background-image: url(assets/images/background-gradient-dark-blue2.jpeg);
+	 background-size: cover;
+	 color: white;
+	}
+
+	a{
+	 text-decoration: none;
+	all: unset;
+	color: white;
+	}
+
+	.itemsContainer{
+	 width: 100vw;
+	 height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	}
+
+	.itemsContainer > div{
+	 height: 40vh;
+	 margin-top: -150px;
+	 display:flex;
+	 flex-direction: column; 
+	 align-items:center;
+	 justify-content: space-evenly;
+	}
+
+	.input{
+	 width: 250px;
+	 border-radius: 3px;
+	 outline: none;
+	 border: 1px solid #191919;
+	 margin-bottom: -7%;
+	}
+
+	.inputCostumer, .inputDate{
+	 width: 150px;
+	 border-radius: 3px;
+	 outline: none;
+	 border: 1px solid #191919;
+	 margin-bottom: -7%;
+	}
+
+	.alert-invalid-validate{
+	 margin-left: 68%;
+	 white-space: no-wrap;
+	 font-size: 85%;
+	 color: red;
+	 display: none;
+	 position:absolute;
+	}
+
+	.alert-invalid-phone-number{
+	 margin-left: 22%;
+	 white-space: no-wrap;
+	 font-size: 85%;
+	 color: red;
+	 display: none;
+	 position:absolute;
+	}
+
+	.select{
+	 border-radius: 3px;
+	 outline: none;
+	 border: 1px solid #191919;
+	 background: #FFF;
+	}
+
+	.selected:hover{
+	 background: #FFF;
+	}
