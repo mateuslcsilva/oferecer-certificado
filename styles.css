@@ -71,3 +71,9 @@
 	.selected:hover{
 	 background: #FFF;
 	}
+
+	@media (max-width: 1400px){
+		.lg-mb{
+			margin-bottom: 25px;
+		}
+	}
